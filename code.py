@@ -83,8 +83,7 @@ def main():
     st.caption(APP_SUB_TITLE)
 
     # load data
-    comit = pd.read_csv("C:\site\committess.csv")
-    df = pd.read_csv("C:\site\GroupBy.csv")
+    df = pd.read_csv("GroupBy.csv")
     df['date'] = pd.to_datetime(df['date'], format='%m/%d/%Y')
 
     # display_facts(df, year, state, type)
